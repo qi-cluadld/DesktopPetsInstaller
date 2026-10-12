@@ -107,6 +107,9 @@ function Install-Pets {
 }
 # ---------------- 静默模式 ----------------
 if ($Silent) {
+    $norm = @()
+    foreach ($one in $Pets) { foreach ($piece in ([string]$one -split ',')) { if ($piece.Trim()) { $norm += $piece.Trim() } } }
+    if ($norm.Count -gt 0) { $Pets = $norm }
     $sel = $Pets
     if (-not $sel) { $sel = $script:AllPets.Dir }
     $dest = $Target
