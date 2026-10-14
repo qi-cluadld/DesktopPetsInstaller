@@ -47,7 +47,9 @@ $script:AllPets = @(
     @{ Dir = 'DoubaoPet'; Name = '豆包 🥟  小豆子'; Desc = '淡蓝豆子, 软乎乎' },
     @{ Dir = 'QwenPet'; Name = '通义千问 🌀  蓝方块'; Desc = '蓝方块 + 三个白块' },
     @{ Dir = 'CopilotPet'; Name = 'Copilot 🚀  双方块'; Desc = '两块圆角方块叠加的彩虹配色' },
-    @{ Dir = 'GLMPet'; Name = '智谱 GLM ⭕  双环'; Desc = '两个交叠的蓝色圆环' }
+    @{ Dir = 'GLMPet'; Name = '智谱 GLM ⭕  双环'; Desc = '两个交叠的蓝色圆环' },
+    @{ Dir = 'GrokPet'; Name = 'Grok ⚔  黑环斜杠'; Desc = '黑圆环加一道斜杠, 爱打架' },
+    @{ Dir = 'ApplePet'; Name = 'Apple Intelligence ✨  七环结'; Desc = '彩虹渐变圆角方块 + 白色七环结' }
 )
 
 function Resolve-Name([string]$dir) {

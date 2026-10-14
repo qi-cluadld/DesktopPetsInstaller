@@ -1,4 +1,4 @@
-﻿# 把八只宠物打成捆绑包 + 用 Windows 自带的 IExpress 生成自解压安装程序 .exe
+# 把八只宠物打成捆绑包 + 用 Windows 自带的 IExpress 生成自解压安装程序 .exe
 $ErrorActionPreference = 'Stop'
 $here = $PSScriptRoot
 $root = Split-Path $here -Parent
@@ -7,7 +7,7 @@ $build = Join-Path $env:TEMP 'petbuild'
 if (Test-Path $build) { Remove-Item $build -Recurse -Force }
 New-Item -ItemType Directory -Path $build -Force | Out-Null
 $stage = Join-Path $build 'stage'
-$pets = 'GeminiPet','DeepSeekPet','ChatGPTPet','ClaudePet','DoubaoPet','QwenPet','CopilotPet','GLMPet'
+$pets = 'GeminiPet','DeepSeekPet','ChatGPTPet','ClaudePet','DoubaoPet','QwenPet','CopilotPet','GLMPet','GrokPet','ApplePet'
 if (-not (Test-Path $dist)) { New-Item -ItemType Directory -Path $dist -Force | Out-Null }
 New-Item -ItemType Directory -Path $stage -Force | Out-Null
 # 1) 收集(排除 .git)
