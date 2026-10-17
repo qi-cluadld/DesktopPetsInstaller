@@ -49,7 +49,14 @@ $script:AllPets = @(
     @{ Dir = 'CopilotPet'; Name = 'Copilot 🚀  双方块'; Desc = '两块圆角方块叠加的彩虹配色' },
     @{ Dir = 'GLMPet'; Name = '智谱 GLM ⭕  双环'; Desc = '两个交叠的蓝色圆环' },
     @{ Dir = 'GrokPet'; Name = 'Grok ⚔  黑环斜杠'; Desc = '黑圆环加一道斜杠, 爱打架' },
-    @{ Dir = 'ApplePet'; Name = 'Apple Intelligence ✨  七环结'; Desc = '彩虹渐变圆角方块 + 白色七环结' }
+    @{ Dir = 'ApplePet'; Name = 'Apple Intelligence ✨  七环结'; Desc = '彩虹渐变圆角方块 + 白色七环结' },
+      @{ Dir = 'GoogleGPet'; Name = 'Google G ' + [char]0x2B50 + '  ' + [char]0x6E10 + [char]0x53D8 + 'G'; Desc = 'Google 2025 ' + [char]0x6E10 + [char]0x53D8 + 'G' },
+      @{ Dir = 'GoogleFlatPet'; Name = 'Google ' + [char]0x56DB + [char]0x8272 + 'G'; Desc = 'Google 2015 ' + [char]0x6241 + [char]0x5E73 + [char]0x56DB + [char]0x8272 + 'G' },
+      @{ Dir = 'GoogleOldPet'; Name = 'Google 1998  '; Desc = '1998 ' + [char]0x539F + [char]0x7248 + ' ' + [char]0x7EA2 + 'G' },
+      @{ Dir = 'AppleLogoPet'; Name = 'Apple logo  '; Desc = [char]0x9ED1 + [char]0x8272 + ' ' + [char]0x82F9 + [char]0x679C + ' ' + [char]0x6807 + [char]0x5FD7 },
+      @{ Dir = 'Win7Pet'; Name = 'Windows 7  四色旗' },
+      @{ Dir = 'Win10Pet'; Name = 'Windows 10  蓝窗' }
+
 )
 
 function Resolve-Name([string]$dir) {

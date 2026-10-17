@@ -10,7 +10,7 @@
 # =====================================================================
 param(
     [string]$WixDir = (Join-Path $env:TEMP 'wix314'),
-    [string[]]$Pets = @('GeminiPet', 'DeepSeekPet', 'ChatGPTPet', 'ClaudePet', 'DoubaoPet', 'QwenPet', 'CopilotPet', 'GLMPet', 'GrokPet', 'ApplePet'),
+    [string[]]$Pets = @('GeminiPet', 'DeepSeekPet', 'ChatGPTPet', 'ClaudePet', 'DoubaoPet', 'QwenPet', 'CopilotPet', 'GLMPet', 'GrokPet', 'ApplePet', 'GoogleGPet', 'GoogleFlatPet', 'GoogleOldPet', 'AppleLogoPet', 'Win7Pet', 'Win10Pet'),
     [string]$ProductName = 'AI 桌宠合集',
     [string]$Version = '1.1.0',
     [string]$Manufacturer = 'qi-cluadld'
@@ -91,6 +91,8 @@ $feats = ($valid | ForEach-Object {
         'GLMPet' { '智谱 GLM 双环' }
         'GrokPet' { 'Grok 黑环斜杠' }
         'ApplePet' { 'Apple Intelligence 七环结' }
+          'GoogleGPet' { 'Google G (gradient)' }
+          'GoogleFlatPet' { 'Google G (flat)' }
         default { $_ }
     }
     '    <Feature Id="F' + $_ + '" Title="' + $title + '" Level="1"><ComponentGroupRef Id="' + $_ + 'Group" /></Feature>'
